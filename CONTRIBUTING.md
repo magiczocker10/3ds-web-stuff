@@ -54,3 +54,9 @@ other
 If you found a bug or want to suggest something, go to [issues](https://github.com/Wolfyxon/3ds-web-stuff/issues/).
 
 If you are reporting a bug, fully explain it. *Doesn't work*, *Broken*, *Glitchy*, *Buggy* are not valid bug reports.
+
+## Developing for DSi
+Only supported font-size values:
+- 11px - 8.25pt
+- 13px - 9.75pt
+- 15px - 11.25pt

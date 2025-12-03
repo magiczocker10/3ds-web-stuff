@@ -76,7 +76,7 @@ a {
 	background-color: #653198;
 	text-align: center;
 	cursor: pointer;
-	font-size: 13.3px;
+	font-size: 9.75pt;
 	padding: 1px 6px;
 	float: left;
 	-webkit-box-sizing: border-box;
@@ -113,10 +113,11 @@ a {
 }
 
 .app-name {
+    font-size: 9.75pt;
     font-weight: bold;
 }
 .app-description {
-    font-size: 80%;
+    font-size: 8.25pt;
 }
 
 #tab-news article {
@@ -129,6 +130,7 @@ a {
 
 #tab-news article h3 {
     color: darkred;
+    font-size: 11.25pt;
 }
 
 #tab-news article > * {
@@ -137,6 +139,7 @@ a {
 }
 
 #tab-news article p {
+    font-size: 9.75pt;
     padding-bottom: 5px;
     padding-top: 5px;
 }
@@ -148,8 +151,8 @@ a {
     border-radius: 2%;
 }
 
-#tab-about {
-    font-size: 90%;
+#tab-about p {
+    font-size: 9.75pt;
 }
 
 .social-link img {
@@ -171,7 +174,7 @@ a {
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    font-size: 70%;
+    font-size: 8.25pt;
     padding-left: 2%;
     padding-right: 2%;
     min-width: 65px;
@@ -210,4 +213,8 @@ a {
 .dsi #top-screen h4,
 .dsi #controls {
     display: none;
+}
+
+.dsi #title-zone h1 {
+    font-size: 11.25pt;
 }

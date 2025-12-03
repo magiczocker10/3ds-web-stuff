@@ -31,7 +31,7 @@ textarea {
 
 #bars {
 	display: block;
-	font-size: 9px;
+	font-size: 6.75pt;
 	height: 45%;
 	margin-left: auto;
 	margin-right: auto;
@@ -43,7 +43,7 @@ textarea {
 
 #numbers {
 	display: inline-block;
-	font-size: 6px;
+	font-size: 4.5pt;
 	height: 100%;
 	padding: 0;
 	resize: none;
@@ -61,7 +61,7 @@ textarea {
 
 #terminal {
 	display: inline-block;
-	font-size: 9px;
+	font-size: 6.75pt;
 	height: 100%;
 	overflow-y: hidden;
 	padding-left: 4px;
