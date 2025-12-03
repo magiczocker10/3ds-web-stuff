@@ -1,6 +1,12 @@
 window.addEventListener( 'load', function () {
-	const canv = document.getElementById( 'canvas' ),
-		ctx = canv.getContext( '2d', {
+	const canv = document.getElementById( 'canv' );
+	if ( isDSi() ) {
+		document.getElementById( 'root' ).className = 'dsi';
+		canv.height = '170';
+		canv.width = '230';
+	}
+
+	const ctx = canv.getContext( '2d', {
 			alpha: false,
 			willReadFrequently: true
 		} ),
