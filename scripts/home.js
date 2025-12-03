@@ -1,4 +1,8 @@
 window.addEventListener('load', function() {
+	if ( isDSi() ) {
+		document.getElementById( 'root' ).className = 'dsi'
+	}
+
 	var id = 0,
 		lastKeyPress = 0,
 		prevFrameTime = new Date().valueOf();

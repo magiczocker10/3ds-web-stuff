@@ -195,3 +195,19 @@ a {
     background-color: #9471de;
     border-color: #b698ff;
 }
+
+.dsi body {
+	margin: 0;
+}
+
+.dsi #top-screen,
+.dsi #bottom-screen {
+	margin-left: 0;
+	height: 176px;
+	width: 239px;
+}
+
+.dsi #top-screen h4,
+.dsi #controls {
+    display: none;
+}
