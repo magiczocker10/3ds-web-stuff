@@ -1,4 +1,7 @@
 window.addEventListener( 'load', function () {
+	if ( isDSi() ) {
+		document.getElementById( 'root' ).className = 'dsi';
+	}
 	const formula = document.getElementById( 'formula' ),
 		result = document.getElementById( 'result' );
 
