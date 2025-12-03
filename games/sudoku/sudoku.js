@@ -1,4 +1,7 @@
 window.addEventListener( 'load', function () {
+	if ( isDSi() ) {
+		document.getElementById( 'root' ).className = 'dsi';
+	}
 	const t = document.getElementById( 'board' ),
 		settings = document.getElementById( 'settings' ),
 		sizes = { 4: [ 2, 2, 10 ], 6: [ 3, 2, 21 ], 9: [ 3, 3, 45 ] }; // Width, Height, Sum per col/row
@@ -90,7 +93,7 @@ window.addEventListener( 'load', function () {
 	}
 
 	function generateTable( size ) {
-		t.textContent = '';
+		t.innerHTML = '';
 		for ( var i = 0; i < size; i++ ) {
 			var row = t.insertRow( -1 );
 			for ( var j = 0; j < size; j++ ) {
@@ -107,8 +110,8 @@ window.addEventListener( 'load', function () {
 		while ( c < n ) {
 			var x = Math.floor( Math.random() * size );
 			var y = Math.floor( Math.random() * size );
-			if ( r[ y ].cells[ x ].textContent.length ) {
-				r[ y ].cells[ x ].textContent = '';
+			if ( r[ y ].cells[ x ].className === '' ) {
+				r[ y ].cells[ x ].textContent = '\u00A0';
 				r[ y ].cells[ x ].className += 'input';
 				c++;
 			}
