@@ -1,4 +1,7 @@
 window.addEventListener( 'load', function () {
+	if ( isDSi() ) {
+		document.getElementById( 'root' ).className = 'dsi';
+	}
 	const unitType = document.getElementById( 'unit-type' ),
 		inputUnitFrom = document.getElementById( 'input-unit-from' ),
 		inputUnitTo = document.getElementById( 'input-unit-to' ),

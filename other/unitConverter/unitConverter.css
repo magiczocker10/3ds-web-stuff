@@ -1,34 +1,45 @@
 h3 {
-	text-align: center;
-	font-size: 30pt;
-	margin-top: 0;
+	line-height: 100px;
+	margin: 0;
 }
 
 #input-num {
 	width: 120px;
 }
 
+h3,
 #output-num {
 	text-align: center;
-	font-size: 30px;
+	font-size: 22pt;
 }
 
 #disclaimer {
+	bottom: 5px;
+	font-size: 8.25pt;
 	position: absolute;
-	font-size: 15px;
-	bottom: 15px;
+}
+
+label,
+select {
+	font-size: 9.75pt;
+}
+
+#top-screen div,
+#bottom-screen div {
+	margin: 0 5px;
 }
 
 #btn-convert {
 	background-color: #32cd32;
 	border: 2px #008000 solid;
 	border-radius: 5px;
-	font-size: 22.5pt;
+	font-size: 11.25pt;
 	font-weight: bold;
-	width: 200px;
+	width: 150px;
 	height: 50px;
 	margin: 5px auto;
 	display: block;
+	line-height: 46px;
 }
 
 #btn-convert:active {
@@ -42,4 +53,20 @@ h3 {
 #top-screen,
 #bottom-screen {
 	position: relative;
+}
+
+.dsi body {
+	margin: 0;
+}
+
+.dsi #top-screen,
+.dsi #bottom-screen {
+	margin-left: 0;
+	height: 176px;
+	width: 240px;
+}
+
+.dsi #output-num,
+.dsi h3 {
+	font-size: 11.25pt;
 }
