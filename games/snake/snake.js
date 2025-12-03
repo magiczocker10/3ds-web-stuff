@@ -3,7 +3,7 @@ window.addEventListener( 'load', function () {
 	if ( isDSi() ) {
 		document.getElementById( 'root' ).className = 'dsi';
 		canv.height = '170';
-		canv.width = '230';
+		canv.width = '240';
 	}
 
 	const ctx = canv.getContext( '2d', {
