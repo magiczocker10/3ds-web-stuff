@@ -1,4 +1,7 @@
 window.addEventListener('load', function() {
+	if ( isDSi() ) {
+		document.getElementById( 'root' ).className = 'dsi';
+	}
 	const blue = document.getElementById('pointsB'),
 		yellow = document.getElementById('pointsY'),
 		field = document.getElementById('field'),
@@ -73,7 +76,7 @@ window.addEventListener('load', function() {
 
 		var cells = field.getElementsByTagName('td');
 		for (var i=0; i<cells.length; i++) {
-			cells[ i ].textContent = '';
+			cells[ i ].textContent = '\u00A0';
 			cells[ i ].removeAttribute( 'class' );
 		}
 		won = false;
