@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
 	if ( isDSi() ) {
-		document.getElementById( 'root' ).className = 'dsi'
+		document.getElementById( 'root' ).className = 'dsi';
 	}
 
 	var id = 0,

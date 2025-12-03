@@ -3,7 +3,7 @@
 window.addEventListener( 'load', function () {
 	const ds = isDSi();
 	if ( ds ) {
-		document.getElementById( 'root' ).className = 'dsi'
+		document.getElementById( 'root' ).className = 'dsi';
 	}
 
 	const field = document.getElementById( 'field' ),

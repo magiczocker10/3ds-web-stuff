@@ -63,3 +63,21 @@
 	border: 2px #ff0 solid;
 	border-radius: 10px;
 }
+
+.dsi body {
+	margin: 0;
+}
+
+.dsi #top-screen,
+.dsi #bottom-screen {
+	margin-left: 0;
+	height: 176px;
+	width: 239px;
+}
+
+.dsi #keyboard span {
+	font-size: 7pt;
+	height: 12px;
+	line-height: 9pt;
+	width: 12px;
+}

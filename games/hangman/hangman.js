@@ -1,10 +1,28 @@
 window.addEventListener( 'load', function () {
+	const ds = isDSi(),
+		canvas = document.getElementById( 'canvas' );
+	if ( ds ) {
+		document.getElementById( 'root' ).className = 'dsi';
+		canvas.height = '90';
+		canvas.width = '90';
+	}
 	const button = document.getElementById( 'btn-reset' ),
 		keyboard = document.getElementById( 'keyboard' ),
 		wordDisplay = document.getElementById( 'display' ),
-		canvas = document.getElementById( 'canvas' ),
 		ctx = canvas.getContext( '2d' ),
-		lines = [ // x from, y from, x to, y to
+		lines = ds ? [ // x from, y from, x to, y to
+			[ 10, 80, 40, 80 ],
+			[ 25, 80, 25, 10 ],
+			[ 25, 20, 35, 10 ],
+			[ 25, 10, 60, 10 ],
+			[ 60, 10, 60, 20 ],
+			null,
+			[ 60, 40, 60, 65 ],
+			[ 60, 45, 50, 55 ],
+			[ 60, 45, 70, 55 ],
+			[ 60, 65, 50, 75 ],
+			[ 60, 65, 70, 75 ]
+		] : [ // x from, y from, x to, y to
 			[ 10, 140, 70, 140 ],
 			[ 40, 140, 40, 10 ],
 			[ 40, 30, 60, 10 ],
@@ -89,7 +107,11 @@ window.addEventListener( 'load', function () {
 				ctx.moveTo( l[ 0 ], l[ 1 ] );
 				ctx.lineTo( l[ 2 ], l[ 3 ] );
 			} else {
-				ctx.arc( 100, 50, 20, 0, 2 * Math.PI, false );
+				if ( ds ) {
+					ctx.arc( 60, 30, 10, 0, 2 * Math.PI, false );
+				} else {
+					ctx.arc( 100, 50, 20, 0, 2 * Math.PI, false );
+				}
 			}
 			ctx.stroke();
 			ctx.closePath();
