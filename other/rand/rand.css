@@ -24,19 +24,16 @@ input[ type='number' ] {
 }
 
 #result {
-	display: table-cell;
-	vertical-align: middle;
+	font-size: 15px;
 	word-break: break-all;
 }
 
 #result-container {
-	display: table;
 	background-color: #fff;
 	border: 2px solid #000;
-	width: 40%;
-	height: 70%;
 	border-radius: 20px;
-	margin: 7% 30%;
+	margin: 10px;
+	line-height: 193px;
 }
 
 #btn-gen {
@@ -46,4 +43,19 @@ input[ type='number' ] {
 	border-radius: 5px;
 	padding: 1%;
 	margin: 3%;
+}
+
+.dsi body {
+	margin: 0;
+}
+
+.dsi #top-screen,
+.dsi #bottom-screen {
+	margin-left: 0;
+	height: 176px;
+	width: 239px;
+}
+
+.dsi #result-container {
+	line-height: 152px;
 }

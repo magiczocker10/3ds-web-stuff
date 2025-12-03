@@ -1,4 +1,7 @@
 window.addEventListener( 'load', function () {
+	if ( isDSi() ) {
+		document.getElementById( 'root' ).className = 'dsi';
+	}
 	const minInput = document.getElementById( 'min' ),
 		maxInput = document.getElementById( 'max' ),
 		resultTxt = document.getElementById( 'result' ),
