@@ -1,4 +1,7 @@
 window.addEventListener( 'load', function () {
+	if ( isDSi() ) {
+		document.getElementById( 'root' ).className = 'dsi';
+	}
 	const table = document.getElementById( 'table' ),
 		thead = table.appendChild( document.createElement( 'thead' ) ),
 		tbody = table.appendChild( document.createElement( 'tbody' ) ),
