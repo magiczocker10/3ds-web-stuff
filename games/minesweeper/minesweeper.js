@@ -1,6 +1,11 @@
 // Originally made by magiczocker10
 
 window.addEventListener( 'load', function () {
+	const ds = isDSi();
+	if ( ds ) {
+		document.getElementById( 'root' ).className = 'dsi'
+	}
+
 	const field = document.getElementById( 'field' ),
 		tbody = field.appendChild( document.createElement( 'tbody' ) ),
 		minesDisplay = document.getElementById( 'mines' ),
@@ -9,8 +14,8 @@ window.addEventListener( 'load', function () {
 		restartMsg = document.getElementById( 'restart-msg' ),
 		resetBtn = document.getElementById( 'btn-reset' ),
 		flagBtn = document.getElementById( 'btn-flag' ),
-		width = 12,
-		height = 12,
+		width = ds ? 10 : 12,
+		height = ds ? 10 : 12,
 		mineCount = 10,
 		pos = [
 			[ -1, -1 ],

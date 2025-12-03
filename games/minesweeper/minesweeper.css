@@ -77,3 +77,24 @@
 .hidden {
 	display: none;
 }
+
+.dsi body {
+	margin: 0;
+}
+
+.dsi #top-screen,
+.dsi #bottom-screen {
+	margin-left: 0;
+	height: 176px;
+	width: 239px;
+}
+
+.dsi #top-screen h2,
+.dsi #stats {
+	font-size: 10pt;
+	width: 80%;
+}
+
+.dsi #buttons {
+	width: 20%;
+}
