@@ -27,6 +27,10 @@ const terminalTexts = [
 ];
 
 window.addEventListener('load', function() {
+	const ds = isDSi();
+	if ( ds ) {
+		document.getElementById( 'root' ).className = 'dsi';
+	}
 	const terminal = document.getElementById('terminal'),
 		numbers = document.getElementById('numbers'),
 		bars = document.getElementById('bars'),
@@ -34,21 +38,25 @@ window.addEventListener('load', function() {
 		ctx = canv.getContext('2d', { alpha: false }),
 		termLength = terminalTexts.length,
 		barLength = 30,
-		cols = 6,
-		rows = 30;
+		cols = ds ? 2 : 6,
+		rows = ds ? 14 : 30,
+		tileCount = ds ? 10 : 16,
+		barCount = ds ? 6 : 9,
+		echoCount = ds ? 6 : 16;
 	var terminalLength = 0,
 		barTxt = '',
 		newNum = '',
 		newBar = '',
 		oldTiles = [];
 
+	canv.width = 13 * tileCount - 2;
 	function ran(num) {
 		return Math.floor(Math.random() * num);
 	}
 
 	function echo() {
 		var v = terminal.value;
-		if (terminalLength < 16) {
+		if (terminalLength < echoCount) {
 			terminalLength++;
 		} else {
 			v = v.substring(v.match('\n').index + 2);			
@@ -58,7 +66,7 @@ window.addEventListener('load', function() {
 
 	function genTiles() {
 		for (var y=0; y<16; y++) {
-			for (var x=0; x<16; x++) {
+			for (var x=0; x<tileCount; x++) {
 				const r = Math.random() < 0.5,
 					i = y*16+x;
 				if (oldTiles[i] !== r) {
@@ -72,7 +80,7 @@ window.addEventListener('load', function() {
 
 	function genBars() {
 		newBar = '';
-		for (var ln=0; ln<9; ln++) {
+		for (var ln=0; ln<barCount; ln++) {
 			newBar += ln + " ) |" + barTxt.substring(0, ran(barLength)) + '\n';
 		}
 		bars.value = newBar;
