@@ -45,17 +45,6 @@ input[ type='number' ] {
 	margin: 3%;
 }
 
-.dsi body {
-	margin: 0;
-}
-
-.dsi #top-screen,
-.dsi #bottom-screen {
-	margin-left: 0;
-	height: 176px;
-	width: 240px;
-}
-
 .dsi #result-container {
 	line-height: 152px;
 }

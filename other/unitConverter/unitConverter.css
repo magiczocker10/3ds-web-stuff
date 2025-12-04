@@ -55,17 +55,6 @@ select {
 	position: relative;
 }
 
-.dsi body {
-	margin: 0;
-}
-
-.dsi #top-screen,
-.dsi #bottom-screen {
-	margin-left: 0;
-	height: 176px;
-	width: 240px;
-}
-
 .dsi #output-num,
 .dsi h3 {
 	font-size: 11.25pt;

@@ -1,33 +1,33 @@
 #screens > * {
-    text-align: center;
+	text-align: center;
 }
 
 #main-texts {
-    width: 50%;
-    border-radius: 30px;
-    margin-left: 25%;
-    margin-top: 15%;
+	width: 50%;
+	border-radius: 30px;
+	margin-left: 25%;
+	margin-top: 15%;
 }
 
 #main-texts h1 {
-    color: red;
+	color: red;
 }
 
 #main-texts p {
-    background-color: black;
-    border-radius: 10px;
-    color: white;
+	background-color: black;
+	border-radius: 10px;
+	color: white;
 }
 
 #back {
-    background-color: rgb(8, 194, 8);
-    color: white;
-    text-decoration: none;
-    padding: 3%;
-    border-radius: 10px;
+	background-color: rgb(8, 194, 8);
+	color: white;
+	text-decoration: none;
+	padding: 3%;
+	border-radius: 10px;
 }
 
 .note {
-    margin-top: 30%;
-    font-size: 60%;
+	margin-top: 30%;
+	font-size: 60%;
 }

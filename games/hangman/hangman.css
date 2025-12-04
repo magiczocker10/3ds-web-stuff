@@ -64,17 +64,6 @@
 	border-radius: 10px;
 }
 
-.dsi body {
-	margin: 0;
-}
-
-.dsi #top-screen,
-.dsi #bottom-screen {
-	margin-left: 0;
-	height: 176px;
-	width: 240px;
-}
-
 .dsi #keyboard span {
 	font-size: 8.25pt;
 	height: 12px;
