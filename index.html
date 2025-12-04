@@ -20,429 +20,425 @@
     <script src="scripts/home.js" type="text/javascript"></script>
 </head>
 <body>
-  <div id="screens">
-      <div id="top-screen">
-          <div id="title-zone">
-              <h1>3DS Web stuff</h1>
-              <p>by Wolfyxon</p>
-          </div>
-          <p>
-              A little collection of games and other stuff designed for the Nintendo 3DS online browser.
-          </p>
-          <h4>Gamepad controls</h4>
-          <table id="controls">
-              <tr>
-                  <td>&#xE07B;</td><td>Previous tab</td> <td>&#xE07C;</td><td>Next tab</td>
-              </tr>
-              <tr>
-                  <td>&#xE079;</td><td>Scroll up</td> <td>&#xE07A;</td><td>Scroll down</td>
-              </tr>
-
-          </table>
-          <span id="pet" class="animated"></span>
-      </div>
-      <div id="bottom-screen">
-          <div id="tab-btns">
-              <span data-id="0">Games</span>
-              <span data-id="1">Other</span>
-              <span data-id="2">News</span>
-              <span data-id="3">About</span>
-          </div>
-          <div id="tabs">
-              <div id="tab-games">
-                  <div class="app-list">
-                      <a href="games/pigeon">
-                          <img class="app-icon" src="games/pigeon/icon.png" alt="Pigeon icon">
-                          <div class="app-text">
-                              <p class="app-name">Pigeon</p>
-                              <p class="app-description">Fly between pipes</p>
-                          </div>
-                      </a>
-                      <a href="games/jumpy">
-                          <img class="app-icon" src="games/jumpy/icon.png" alt="Jumpy icon">
-                          <div class="app-text">
-                              <p class="app-name">Jumpy</p>
-                              <p class="app-description">Jump and avoid spikes</p>
-                          </div>
-                      </a>
-                      <a href="games/snake">
-                          <img class="app-icon" src="games/snake/icon.png" alt="Snake icon">
-                          <div class="app-text">
-                              <p class="app-name">Snake</p>
-                              <p class="app-description">Eat apples to grow</p>
-                              <span class="tag tag-dsi"></span>
-                          </div>
-                      </a>
-                      <a href="games/minesweeper">
-                          <img class="app-icon" src="games/minesweeper/img/icon.png" alt="Minesweeper icon">
-                          <div class="app-text">
-                              <p class="app-name">MineSweeper</p>
-                              <p class="app-description">Uncover tiles and watch for the mines</p>
-                              <span class="tag tag-dsi"></span>
-                          </div>
-                      </a>
-                      <a href="games/breakout">
-                          <img class="app-icon" src="games/breakout/icon.png" alt="Breakout icon">
-                          <div class="app-text">
-                              <p class="app-name">Breakout</p>
-                              <p class="app-description">Destroy blocks and keep the ball up</p>
-                              <span class="tag tag-early-access"></span>
-                          </div>
-                      </a>
-                      <a href="games/jetfighter">
-                          <img class="app-icon" src="games/jetfighter/img/jet.png" alt="JetFighter icon">
-                          <div class="app-text">
-                              <p class="app-name">JetFighter</p>
-                              <p class="app-description">Take down the evil helicopters!</p>
-                              <span class="tag tag-early-access"></span>
-                          </div>
-                      </a>
-                      <a href="games/pong">
-                          <img class="app-icon" src="games/pong/icon.png" alt="Pong icon">
-                          <div class="app-text">
-                              <p class="app-name">Pong!</p>
-                              <p class="app-description">Play ping-pong with an AI.</p>
-                          </div>
-                      </a>
-                      <a href="games/ttt">
-                          <img class="app-icon" src="games/ttt/icon.png" alt="Tic-Tac-Toe icon">
-                          <div class="app-text">
-                              <p class="app-name">Tic-Tac-Toe</p>
-                              <p class="app-description">Place X and O to make a pattern.</p>
-                              <span class="tag tag-dsi"></span>
-                          </div>
-                      </a>
-                      <a href="games/sudoku">
-                          <img class="app-icon" src="games/sudoku/icon.png" alt="Sudoku icon">
-                          <div class="app-text">
-                              <p class="app-name">Sudoku</p>
-                              <p class="app-description">Don't repeat numbers!</p>
-                              <span class="tag tag-dsi"></span>
-                          </div>
-                      </a>
-                      <a href="games/connect4">
-                          <img class="app-icon" src="games/connect4/icon.png" alt="Connect 4 icon">
-                          <div class="app-text">
-                              <p class="app-name">Connect 4</p>
-                              <p class="app-description">Connect 4 points</p>
-                              <span class="tag tag-dsi"></span>
-                          </div>
-                      </a>
-                      <a href="games/hangman">
-                          <img class="app-icon" src="games/hangman/icon.png" alt="Hangman icon">
-                          <div class="app-text">
-                              <p class="app-name">Hangman</p>
-                              <p class="app-description">Guess the word</p>
-                              <span class="tag tag-dsi"></span>
-                          </div>
-                      </a>
-                      <a href="games/maze">
-                          <img class="app-icon" src="games/maze/icon.png" alt="Simple Maze icon">
-                          <div class="app-text">
-                              <p class="app-name">Simple Maze</p>
-                              <p class="app-description">A simple maze game</p>
-                              <span class="tag tag-dsi"></span>
-                          </div>
-                      </a>
-                      <a href="games/picross">
-                        <img class="app-icon" src="" alt="Picross icon">
-                        <div class="app-text">
-                            <p class="app-name">Picross</p>
-                            <p class="app-description">Fill the cells</p>
-                            <span class="tag tag-early-access"></span>
-                        </div>
-                      </a>
-                      <a href="games/simon">
-                          <img class="app-icon" src="" alt="Simon icon">
-                          <div class="app-text">
-                              <p class="app-name">Simon</p>
-                              <p class="app-description">Remember the lights</p>
-                              <span class="tag tag-dsi"></span>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-              <div id="tab-other">
-                  <div class="app-list">
-                      <a href="other/calculator">
-                          <img class="app-icon" src="other/calculator/icon.png" alt="Calculator icon">
-                          <div class="app-text">
-                              <p class="app-name">Calculator</p>
-                              <p class="app-description">Just a calculator</p>
-                              <span class="tag tag-dsi"></span>
-                          </div>
-                      </a>
-                      <a href="other/brush">
-                          <img class="app-icon" src="other/brush/icon.png" alt="Brush icon">
-                          <div class="app-text">
-                              <p class="app-name">Brush</p>
-                              <p class="app-description">A drawing app</p>
-                              <span class="tag tag-early-access"></span>
-                          </div>
-                      </a>
-                      <a href="other/hack">
-                          <img class="app-icon" src="other/hack/icon.png" alt="Hack icon">
-                          <div class="app-text">
-                              <p class="app-name">Hack</p>
-                              <p class="app-description">Totally real hacking interface</p>
-                              <span class="tag tag-dsi"></span>
-                          </div>
-                      </a>
-                      <a href="other/timer">
-                        <img class="app-icon" src="img/test.png" alt="Timer icon">
-                        <div class="app-text">
-                            <p class="app-name">Timer</p>
-                            <p class="app-description">Measure time</p>
-                        </div>
-                    </a>
-                    <a href="other/coder/">
-                        <img class="app-icon" src="other/coder/icon.png" alt="Coder">
-                        <div class="app-text">
-                            <p class="app-name">Coder</p>
-                            <p class="app-description">Turn text into encoded images</p>
-                            <span class="tag tag-dsi"></span>
-                        </div>
-                    </a>
-                    <a href="other/unitConverter">
-                        <img class="app-icon" src="img/test.png" alt="Unit converter icon">
-                        <div class="app-text">
-                            <p class="app-name">Unit converter</p>
-                            <p class="app-description">Convert between units</p>
-                            <span class="tag tag-dsi"></span>
-                        </div>
-                    </a>
-                    <a href="other/rand">
-                        <img class="app-icon" src="img/test.png" alt="Rand icon">
-                        <div class="app-text">
-                            <p class="app-name">Random numbers</p>
-                            <p class="app-description">Get random numbers in a range</p>
-                            <span class="tag tag-dsi"></span>
-                        </div>
-                    </a>
-                    <a href="other/debug">
-                        <img class="app-icon" src="img/test.png" alt="Debug icon">
-                        <div class="app-text">
-                            <p class="app-name">Debug</p>
-                            <p class="app-description">Some testing</p>
-                        </div>
-                    </a>
-                    <a href="other/font">
-                        <img class="app-icon" src="img/test.png" alt="Font test icon">
-                        <div class="app-text">
-                            <p class="app-name">Font test</p>
-                            <p class="app-description">3DS font test</p>
-                            <span class="tag tag-dsi"></span>
-                        </div>
-                    </a>
-                    <a href="other/elmGameTest">
-                        <img class="app-icon" src="img/test.png" alt="Element game test icon">
-                        <div class="app-text">
-                            <p class="app-name">elementGame.js</p>
-                            <p class="app-description">elementGame.js library test</p>
-                        </div>
-                    </a>
-                </div>
+    <div id="screens">
+        <div id="top-screen">
+            <div id="title-zone">
+                <h1>3DS Web stuff</h1>
+                <p>by Wolfyxon</p>
             </div>
-            <div id="tab-news">
-                <article>
-                    <h3>19.08.2024</h3>
-                    <p>
-                        <a href="games/breakout/">Breakout</a> is finally playable on Old 3DS thanks to magiczocker10!
-                    </p>
-                  </article>
-                  <article>
-                    <h3>22.06.2024</h3>
-                    <p>
-                        The contact form has been disabled due to it being used by bots.
-                    </p>
-                    <p>
-                        I expected that it's going to be used by bots at one point, since it used a public Discord webhook which is not a very safe solution,
-                        but I thought it would be cool to send messages directly from your 3DS.
-                    </p>
-                    <p>
-                        It might return at some point, but I need to maybe use a custom server in the middle which would redirect the webhook to Discord, but I
-                        need to find a free solution for that.
-                    </p>
-                  </article>
-                  <article>
-                      <h3>05.06.2024</h3>
-                      <p>
-                          The site has gotten some changes lately.
-                      </p>
-                      <p>
-                          <a href="games/ttt">Tic-Tac-Toe</a> has a new nicer look, and now you can flag cells in <a href="games/minesweeper">Minesweeper</a>.
-                      </p>
-                      <p>
-                          Welcome a new contributor! <a href="other/qr">QR code generator</a> can now generate not just QR codes, thanks to basic-experimental.
-                      </p>
-                  </article>
-                  <article>
-                      <h3>11.05.2024</h3>
-                      <p>
-                          Say hello to DSi!
-                      </p>
-                      <p>
-                          Some basic games can now be played on the DSi, thanks to magiczocker10. Games playable on the DSi are marked with the <span class="tag tag-dsi"></span> tag.
-                      </p>
-                  </article>
-                  <article>
-                      <h3>20.04.2024</h3>
-                      <p>
-                          The site is currently going through a lot of technical changes and optimization thanks to magiczocker10.
-                      </p>
-                      <p>
-                          Soon more games will be possible thanks to a new rendering library that uses a tree structure and uses DOM elements instead of drawing on a canvas.
-                      </p>
-                      <p>
-                          This library should also provide much better performance with bigger games.
-                      </p>
-                      <p class="note">Nerdy stuff lol</p>
-                  </article>
-                  <article>
-                      <h3>11.04.2024</h3>
-                      <p><a href="games/connect4">Connect 4</a> and <a href="games/hangman">Hangman</a> are here thanks to magiczocker10!</p>
-                  </article>
-                  <article>
-                      <h3>08.04.2024</h3>
-                      <p>Today is the last day of 3DS and Wii U online play...</p>
-                      <p>We hope you all had a great time.</p>
-                  </article>
-                  <article>
-                      <h3>07.04.2024</h3>
-                      <p>Today <a href="games/sudoku">Sudoku</a> was added with some other changes by magiczocker10.</p>
-                  </article>
-                  <article>
-                      <h3>01.04.2024</h3>
-                      <p>Happy Easter and April Fools!</p>
-                      <p><a href="games/breakout">Breakout</a> is finally public.</p>
-                      <p>Also a <a href="other/hack">totally real hacking interface</a> was added.</p>
-                  </article>
-                  <article>
-                      <h3>14.03.2024</h3>
-                      <p><a href="games/minesweeper">MineSweeper</a> has been added.</p>
-                      <p>Thanks to magiczocker10 for making it and optimizing other parts of the site!</p>
-                  </article>
-                  <article>
-                      <h3>18.02.2024</h3>
-                      <p>Restyled some site elements to make it more lively.</p>
-                      <p>More games are coming very soon!</p>
-                  </article>
-                  <article>
-                      <h3>10.02.2024</h3>
-                      <p>Some performance issues were fixed on Old 3DS systems and minor bugfixes were made.</p>
-                      <p>Added a scrolling background to JetFighter.</p>
-                  </article>
-                  <article>
-                      <h3>06.02.2024</h3>
-                      <p>Tuesday patch! Games will now run at the same speed on all devices no matter the performance. Pigeon and Pong are now slightly more difficult.</p>
-                      <p>Other minor bugfixes were made.</p>
-                      <p>I also received some nice game ideas, and bug reports. In near future I'll develop a minimal game engine that will allow me to develop more advanced games. I noted these ideas down.</p>
-                  </article>
-                  <article>
-                      <h3>03.02.2024</h3>
-                      <p>I'm currently working on optimizing games and improving support for Old 3DS/2DS</p>
-                      <p>Thanks Heolity for testing!</p>
-                  </article>
-
-                  <article>
-                      <h3>27.01.2024</h3>
+            <p>
+                A little collection of games and other stuff designed for the Nintendo 3DS online browser.
+            </p>
+            <h4>Gamepad controls</h4>
+            <table id="controls">
+                <tr>
+                    <td>&#xE07B;</td><td>Previous tab</td> <td>&#xE07C;</td><td>Next tab</td>
+                </tr>
+                <tr>
+                    <td>&#xE079;</td><td>Scroll up</td> <td>&#xE07A;</td><td>Scroll down</td>
+                </tr>
+            </table>
+            <span id="pet" class="animated"></span>
+        </div>
+        <div id="bottom-screen">
+            <div id="tab-btns">
+                <span data-id="0">Games</span>
+                <span data-id="1">Other</span>
+                <span data-id="2">News</span>
+                <span data-id="3">About</span>
+            </div>
+            <div id="tabs">
+                <div id="tab-games">
+                    <div class="app-list">
+                        <a href="games/pigeon">
+                            <img class="app-icon" src="games/pigeon/icon.png" alt="Pigeon icon">
+                            <div class="app-text">
+                                <p class="app-name">Pigeon</p>
+                                <p class="app-description">Fly between pipes</p>
+                            </div>
+                        </a>
+                        <a href="games/jumpy">
+                            <img class="app-icon" src="games/jumpy/icon.png" alt="Jumpy icon">
+                            <div class="app-text">
+                                <p class="app-name">Jumpy</p>
+                                <p class="app-description">Jump and avoid spikes</p>
+                            </div>
+                        </a>
+                        <a href="games/snake">
+                            <img class="app-icon" src="games/snake/icon.png" alt="Snake icon">
+                            <div class="app-text">
+                                <p class="app-name">Snake</p>
+                                <p class="app-description">Eat apples to grow</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="games/minesweeper">
+                            <img class="app-icon" src="games/minesweeper/img/icon.png" alt="Minesweeper icon">
+                            <div class="app-text">
+                                <p class="app-name">MineSweeper</p>
+                                <p class="app-description">Uncover tiles and watch for the mines</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="games/breakout">
+                            <img class="app-icon" src="games/breakout/icon.png" alt="Breakout icon">
+                            <div class="app-text">
+                                <p class="app-name">Breakout</p>
+                                <p class="app-description">Destroy blocks and keep the ball up</p>
+                                <span class="tag tag-early-access"></span>
+                            </div>
+                        </a>
+                        <a href="games/jetfighter">
+                            <img class="app-icon" src="games/jetfighter/img/jet.png" alt="JetFighter icon">
+                            <div class="app-text">
+                                <p class="app-name">JetFighter</p>
+                                <p class="app-description">Take down the evil helicopters!</p>
+                                <span class="tag tag-early-access"></span>
+                            </div>
+                        </a>
+                        <a href="games/pong">
+                            <img class="app-icon" src="games/pong/icon.png" alt="Pong icon">
+                            <div class="app-text">
+                                <p class="app-name">Pong!</p>
+                                <p class="app-description">Play ping-pong with an AI.</p>
+                            </div>
+                        </a>
+                        <a href="games/ttt">
+                            <img class="app-icon" src="games/ttt/icon.png" alt="Tic-Tac-Toe icon">
+                            <div class="app-text">
+                                <p class="app-name">Tic-Tac-Toe</p>
+                                <p class="app-description">Place X and O to make a pattern.</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="games/sudoku">
+                            <img class="app-icon" src="games/sudoku/icon.png" alt="Sudoku icon">
+                            <div class="app-text">
+                                <p class="app-name">Sudoku</p>
+                                <p class="app-description">Don't repeat numbers!</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="games/connect4">
+                            <img class="app-icon" src="games/connect4/icon.png" alt="Connect 4 icon">
+                            <div class="app-text">
+                                <p class="app-name">Connect 4</p>
+                                <p class="app-description">Connect 4 points</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="games/hangman">
+                            <img class="app-icon" src="games/hangman/icon.png" alt="Hangman icon">
+                            <div class="app-text">
+                                <p class="app-name">Hangman</p>
+                                <p class="app-description">Guess the word</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="games/maze">
+                            <img class="app-icon" src="games/maze/icon.png" alt="Simple Maze icon">
+                            <div class="app-text">
+                                <p class="app-name">Simple Maze</p>
+                                <p class="app-description">A simple maze game</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="games/picross">
+                            <img class="app-icon" src="" alt="Picross icon">
+                            <div class="app-text">
+                                <p class="app-name">Picross</p>
+                                <p class="app-description">Fill the cells</p>
+                                <span class="tag tag-early-access"></span>
+                            </div>
+                        </a>
+                        <a href="games/simon">
+                            <img class="app-icon" src="" alt="Simon icon">
+                            <div class="app-text">
+                                <p class="app-name">Simon</p>
+                                <p class="app-description">Remember the lights</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="tab-other">
+                    <div class="app-list">
+                        <a href="other/calculator">
+                            <img class="app-icon" src="other/calculator/icon.png" alt="Calculator icon">
+                            <div class="app-text">
+                                <p class="app-name">Calculator</p>
+                                <p class="app-description">Just a calculator</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="other/brush">
+                            <img class="app-icon" src="other/brush/icon.png" alt="Brush icon">
+                            <div class="app-text">
+                                <p class="app-name">Brush</p>
+                                <p class="app-description">A drawing app</p>
+                                <span class="tag tag-early-access"></span>
+                            </div>
+                        </a>
+                        <a href="other/hack">
+                            <img class="app-icon" src="other/hack/icon.png" alt="Hack icon">
+                            <div class="app-text">
+                                <p class="app-name">Hack</p>
+                                <p class="app-description">Totally real hacking interface</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="other/timer">
+                            <img class="app-icon" src="img/test.png" alt="Timer icon">
+                            <div class="app-text">
+                                <p class="app-name">Timer</p>
+                                <p class="app-description">Measure time</p>
+                            </div>
+                        </a>
+                        <a href="other/coder/">
+                            <img class="app-icon" src="other/coder/icon.png" alt="Coder">
+                            <div class="app-text">
+                                <p class="app-name">Coder</p>
+                                <p class="app-description">Turn text into encoded images</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="other/unitConverter">
+                            <img class="app-icon" src="img/test.png" alt="Unit converter icon">
+                            <div class="app-text">
+                                <p class="app-name">Unit converter</p>
+                                <p class="app-description">Convert between units</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="other/rand">
+                            <img class="app-icon" src="img/test.png" alt="Rand icon">
+                            <div class="app-text">
+                                <p class="app-name">Random numbers</p>
+                                <p class="app-description">Get random numbers in a range</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="other/debug">
+                            <img class="app-icon" src="img/test.png" alt="Debug icon">
+                            <div class="app-text">
+                                <p class="app-name">Debug</p>
+                                <p class="app-description">Some testing</p>
+                            </div>
+                        </a>
+                        <a href="other/font">
+                            <img class="app-icon" src="img/test.png" alt="Font test icon">
+                            <div class="app-text">
+                                <p class="app-name">Font test</p>
+                                <p class="app-description">3DS font test</p>
+                                <span class="tag tag-dsi"></span>
+                            </div>
+                        </a>
+                        <a href="other/elmGameTest">
+                            <img class="app-icon" src="img/test.png" alt="Element game test icon">
+                            <div class="app-text">
+                                <p class="app-name">elementGame.js</p>
+                                <p class="app-description">elementGame.js library test</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="tab-news">
+                    <article>
+                        <h3>19.08.2024</h3>
+                        <p>
+                            <a href="games/breakout/">Breakout</a> is finally playable on Old 3DS thanks to magiczocker10!
+                        </p>
+                    </article>
+                    <article>
+                        <h3>22.06.2024</h3>
+                        <p>
+                            The contact form has been disabled due to it being used by bots.
+                        </p>
+                        <p>
+                            I expected that it's going to be used by bots at one point, since it used a public Discord webhook which is not a very safe solution,
+                            but I thought it would be cool to send messages directly from your 3DS.
+                        </p>
+                        <p>
+                            It might return at some point, but I need to maybe use a custom server in the middle which would redirect the webhook to Discord, but I
+                            need to find a free solution for that.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>05.06.2024</h3>
+                        <p>
+                            The site has gotten some changes lately.
+                        </p>
+                        <p>
+                            <a href="games/ttt">Tic-Tac-Toe</a> has a new nicer look, and now you can flag cells in <a href="games/minesweeper">Minesweeper</a>.
+                        </p>
+                        <p>
+                            Welcome a new contributor! <a href="other/qr">QR code generator</a> can now generate not just QR codes, thanks to basic-experimental.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>11.05.2024</h3>
+                        <p>
+                            Say hello to DSi!
+                        </p>
+                        <p>
+                            Some basic games can now be played on the DSi, thanks to magiczocker10. Games playable on the DSi are marked with the <span class="tag tag-dsi"></span> tag.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>20.04.2024</h3>
+                        <p>
+                            The site is currently going through a lot of technical changes and optimization thanks to magiczocker10.
+                        </p>
+                        <p>
+                            Soon more games will be possible thanks to a new rendering library that uses a tree structure and uses DOM elements instead of drawing on a canvas.
+                        </p>
+                        <p>
+                            This library should also provide much better performance with bigger games.
+                        </p>
+                        <p class="note">Nerdy stuff lol</p>
+                    </article>
+                    <article>
+                        <h3>11.04.2024</h3>
+                        <p><a href="games/connect4">Connect 4</a> and <a href="games/hangman">Hangman</a> are here thanks to magiczocker10!</p>
+                    </article>
+                    <article>
+                        <h3>08.04.2024</h3>
+                        <p>Today is the last day of 3DS and Wii U online play...</p>
+                        <p>We hope you all had a great time.</p>
+                    </article>
+                    <article>
+                        <h3>07.04.2024</h3>
+                        <p>Today <a href="games/sudoku">Sudoku</a> was added with some other changes by magiczocker10.</p>
+                    </article>
+                    <article>
+                        <h3>01.04.2024</h3>
+                        <p>Happy Easter and April Fools!</p>
+                        <p><a href="games/breakout">Breakout</a> is finally public.</p>
+                        <p>Also a <a href="other/hack">totally real hacking interface</a> was added.</p>
+                    </article>
+                    <article>
+                        <h3>14.03.2024</h3>
+                        <p><a href="games/minesweeper">MineSweeper</a> has been added.</p>
+                        <p>Thanks to magiczocker10 for making it and optimizing other parts of the site!</p>
+                    </article>
+                    <article>
+                        <h3>18.02.2024</h3>
+                        <p>Restyled some site elements to make it more lively.</p>
+                        <p>More games are coming very soon!</p>
+                    </article>
+                    <article>
+                        <h3>10.02.2024</h3>
+                        <p>Some performance issues were fixed on Old 3DS systems and minor bugfixes were made.</p>
+                        <p>Added a scrolling background to JetFighter.</p>
+                    </article>
+                    <article>
+                        <h3>06.02.2024</h3>
+                        <p>Tuesday patch! Games will now run at the same speed on all devices no matter the performance. Pigeon and Pong are now slightly more difficult.</p>
+                        <p>Other minor bugfixes were made.</p>
+                        <p>I also received some nice game ideas, and bug reports. In near future I'll develop a minimal game engine that will allow me to develop more advanced games. I noted these ideas down.</p>
+                    </article>
+                    <article>
+                        <h3>03.02.2024</h3>
+                        <p>I'm currently working on optimizing games and improving support for Old 3DS/2DS</p>
+                        <p>Thanks Heolity for testing!</p>
+                    </article>
+                    <article>
+                        <h3>27.01.2024</h3>
                         <p>Say hi to pets. They'll be chillin' in the left corner of the top screen :D</p>
                         <img src="img/pets/chicken/chicken1.png" style="width: 16%" alt="Chicken">
-                  </article>
-                  <article>
-                      <h3>21.01.2024</h3>
-                      <p><a href="other/calculator">Calculator</a> and <a href="other/rand">Random Number Generator</a> were added.</p>
-                      <p>As you can see the color scheme was changed to make the site look prettier.</p>
-                      <p>I'm currently working on a weather forecast app. Cheers!</p>
-                  </article>
-                  <article>
-                      <h3>15.01.2024</h3>
-                      <p><a href="games/pong">Pong</a> is there!</p>
-                  </article>
-                  <article>
-                      <h3>01.01.2024</h3>
-                      <p>Happy new year!</p>
-                      <p>I decided to publish an early version of <a href="games/jetfighter">JetFighter</a>. Enjoy! </p>
-                  </article>
-                  <article>
-                      <h3>21.12.2023</h3>
-                      <p>Something cool is on the way!</p>
-                      <img src="games/jetfighter/img/jet.png" alt="JetFighter icon">
-                  </article>
-                  <article>
-                      <h3>17.12.2023</h3>
-                      <p>
-                          In today's patch, tap controls were added to Jumpy and Pigeon. You can now just tap the screen to jump. It also allows mobile users to
-                          test the games on their phones.
-                      </p>
-                      <p>
-                          In Pigeon, fixed pipes spawning despite the pigeon being dead or the game not started. I accidentally broke it when testing sprite
-                          scaling.
-                      </p>
-                      <p>
-                          Some minor fixes and additional features were added to the website itself.
-                      </p>
-                  </article>
-                  <article>
-                      <h3>13.12.2023</h3>
-                      <a href="games/ttt">Tic-Tac-Toe</a> released along with some minor fixes in the Pigeon game.
-                  </article>
-                  <article>
-                      <h3>12.12.2023</h3>
-                      <img src="games/pigeon/img/wingUp.png" alt="Pigeon icon">
-                      <p>New game based on Flappy Bird is out!</p>
-                      <a href="games/pigeon">Pigeon</a>!
-                      <p>In near future I might add random events to it like things you have to quickly dodge to make it more interesting, but I think it's already good for now.</p>
-                      <p>It relies on the newly written Game.js library, so I was able to properly test, adapt and fix a lot of bugs while seeing it in action.</p>
-                  </article>
-                  <article>
-                      <h3>05.12.2023</h3>
-                      <p>First game is there! <a href="games/jumpy">Jumpy!</a> </p>
-                      <div style="width: 17px; overflow: hidden">
-                          <img src="games/jumpy/img/jumpy.png" style="width: 72px; height: 26px" alt="Jumpy icon">
-                      </div>
-                      <p>For now the website is going through a lot of technical changes, and I am working on libraries that will allow games to be easily made.</p>
-                      <p>More games and stuff soon!</p>
-                  </article>
-                  <article>
-                      <h3>03.12.2023</h3>
-                      <p>First functional version of the site is complete</p>
-                  </article>
-              </div>
-              <div id="tab-about">
-                  <p>
-                      This website is a small collection of browser games made in JavaScript.
-                  </p>
-                  <p>
-                      Please note that this website uses outdated web standards in order to support the Nintendo 3DS browser, also due to how old the browser is some things may not be possible.
-                  </p>
-                  <p>
-                      If you'd like to suggest a game or create your own with JavaScript, feel free to suggest or open pull requests on the GitHub page.
-                  </p>
-                  <p>
-                      This project is not affiliated with Nintendo, and it's only community driven.
-                  </p>
-                  <h3>Links & contact</h3>
-                  <!--<a href="contact.html" class="only-3ds"><button type="button">Contact form ></button></a>-->
-                  <p class="note">Should be opened on another device</p>
-                  <p class="note only-3ds">Click to reveal the URL</p>
-
-                  <div class="social-link">
-                      <img src="img/logos/github.png" alt="GitHub icon">
-                      <a href="https://github.com/Wolfyxon/3ds-web-stuff" class="non-3ds-link">Source code</a>
-                  </div>
-                  <div class="social-link">
-                      <img src="img/logos/discord.png" alt="Discord icon">
-                      <a href="https://discord.com/invite/RztUGCK" class="non-3ds-link">Discord server</a>
-                  </div>
-                  <div class="social-link">
-                      <img src="img/logos/gmail.png" alt="Gmail icon">
-                      <a href="mailto:wolfyxon@gmail.com" class="non-3ds-link">wolfyxon@gmail.com</a>
-                  </div>
-
-              </div>
-          </div>
-      </div>
-  </div>
+                    </article>
+                    <article>
+                        <h3>21.01.2024</h3>
+                        <p><a href="other/calculator">Calculator</a> and <a href="other/rand">Random Number Generator</a> were added.</p>
+                        <p>As you can see the color scheme was changed to make the site look prettier.</p>
+                        <p>I'm currently working on a weather forecast app. Cheers!</p>
+                    </article>
+                    <article>
+                        <h3>15.01.2024</h3>
+                        <p><a href="games/pong">Pong</a> is there!</p>
+                    </article>
+                    <article>
+                        <h3>01.01.2024</h3>
+                        <p>Happy new year!</p>
+                        <p>I decided to publish an early version of <a href="games/jetfighter">JetFighter</a>. Enjoy! </p>
+                    </article>
+                    <article>
+                        <h3>21.12.2023</h3>
+                        <p>Something cool is on the way!</p>
+                        <img src="games/jetfighter/img/jet.png" alt="JetFighter icon">
+                    </article>
+                    <article>
+                        <h3>17.12.2023</h3>
+                        <p>
+                            In today's patch, tap controls were added to Jumpy and Pigeon. You can now just tap the screen to jump. It also allows mobile users to
+                            test the games on their phones.
+                        </p>
+                        <p>
+                            In Pigeon, fixed pipes spawning despite the pigeon being dead or the game not started. I accidentally broke it when testing sprite
+                            scaling.
+                        </p>
+                        <p>
+                            Some minor fixes and additional features were added to the website itself.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>13.12.2023</h3>
+                        <a href="games/ttt">Tic-Tac-Toe</a> released along with some minor fixes in the Pigeon game.
+                    </article>
+                    <article>
+                        <h3>12.12.2023</h3>
+                        <img src="games/pigeon/img/wingUp.png" alt="Pigeon icon">
+                        <p>New game based on Flappy Bird is out!</p>
+                        <a href="games/pigeon">Pigeon</a>!
+                        <p>In near future I might add random events to it like things you have to quickly dodge to make it more interesting, but I think it's already good for now.</p>
+                        <p>It relies on the newly written Game.js library, so I was able to properly test, adapt and fix a lot of bugs while seeing it in action.</p>
+                    </article>
+                    <article>
+                        <h3>05.12.2023</h3>
+                        <p>First game is there! <a href="games/jumpy">Jumpy!</a> </p>
+                        <div style="width: 17px; overflow: hidden">
+                            <img src="games/jumpy/img/jumpy.png" style="width: 72px; height: 26px" alt="Jumpy icon">
+                        </div>
+                        <p>For now the website is going through a lot of technical changes, and I am working on libraries that will allow games to be easily made.</p>
+                        <p>More games and stuff soon!</p>
+                    </article>
+                    <article>
+                        <h3>03.12.2023</h3>
+                        <p>First functional version of the site is complete</p>
+                    </article>
+                </div>
+                <div id="tab-about">
+                    <p>
+                        This website is a small collection of browser games made in JavaScript.
+                    </p>
+                    <p>
+                        Please note that this website uses outdated web standards in order to support the Nintendo 3DS browser, also due to how old the browser is some things may not be possible.
+                    </p>
+                    <p>
+                        If you'd like to suggest a game or create your own with JavaScript, feel free to suggest or open pull requests on the GitHub page.
+                    </p>
+                    <p>
+                        This project is not affiliated with Nintendo, and it's only community driven.
+                    </p>
+                    <h3>Links & contact</h3>
+                    <!--<a href="contact.html" class="only-3ds"><button type="button">Contact form ></button></a>-->
+                    <p class="note">Should be opened on another device</p>
+                    <p class="note only-3ds">Click to reveal the URL</p>
+                    <div class="social-link">
+                        <img src="img/logos/github.png" alt="GitHub icon">
+                        <a href="https://github.com/Wolfyxon/3ds-web-stuff" class="non-3ds-link">Source code</a>
+                    </div>
+                    <div class="social-link">
+                        <img src="img/logos/discord.png" alt="Discord icon">
+                        <a href="https://discord.com/invite/RztUGCK" class="non-3ds-link">Discord server</a>
+                    </div>
+                    <div class="social-link">
+                        <img src="img/logos/gmail.png" alt="Gmail icon">
+                        <a href="mailto:wolfyxon@gmail.com" class="non-3ds-link">wolfyxon@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
