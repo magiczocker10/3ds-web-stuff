@@ -1,7 +1,12 @@
 // Canvas code from https://stackoverflow.com/a/63599674
 window.addEventListener('load', function() {
-	const canvas = document.getElementById('canvas'),
-		ctx = canvas.getContext('2d'),
+	const canvas = document.getElementById('canvas');
+	if ( isDSi() ) {
+		document.getElementById( 'root' ).className = 'dsi';
+		canvas.height = '150';
+		canvas.width = '150';
+	}
+	const ctx = canvas.getContext('2d'),
 		settings = document.getElementById('settings'),
 		settingB = document.getElementById('buttons'),
 		settingS = document.getElementById('strict'),
@@ -19,8 +24,8 @@ window.addEventListener('load', function() {
 			['rgb(128, 0, 128)', 'rgb(255, 0, 255)'], // purple
 			['rgb(255, 31, 64)', 'rgb(255, 182, 193)'] // pink
 		],
-		w = canvas.width / 2,
-		h = canvas.height / 2;
+		w = Math.floor( canvas.width * 0.5 ),
+		h = Math.floor( canvas.height * 0.5 );
 	var lastend = 0,
 		buttons = 4,
 		degree = 360 / buttons,
@@ -45,14 +50,14 @@ window.addEventListener('load', function() {
 		}
 		ctx.fillStyle = '#262626';
 		ctx.beginPath();
-		ctx.arc(w, h, 50, 0, 2 * Math.PI, false);
+		ctx.arc(w, h, Math.floor( w * 0.5 ), 0, 2 * Math.PI, false);
 		ctx.fill();
 		ctx.stroke();
 	}
 
 	function highlight(button) {
 		draw(button);
-		setTimeout(draw, 300);
+		setTimeout(draw, 500);
 	}
 
 	function play() {
