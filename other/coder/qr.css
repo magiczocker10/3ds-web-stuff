@@ -37,7 +37,6 @@
 	background-color: #32cd32;
 	border: 2px #008000 solid;
 	border-radius: 5px;
-	height: 10%;
 	margin-top: 2%;
 }
 
@@ -71,4 +70,41 @@ label > img {
 
 h3 {
 	text-align: center;
+}
+
+.dsi #left,
+.dsi #right {
+	font-size: 8.25pt;
+	line-height: 140px;
+}
+
+.dsi h3 {
+	font-size: 11.25pt;
+}
+
+.dsi #code {
+	max-width: 200px;
+	max-height: 100px;
+}
+
+.dsi #text {
+	width: 140px;
+}
+
+.dsi #btn-gen {
+	font-size: 9.75pt;
+}
+
+.dsi .page {
+	width: 180px;
+}
+
+.dsi .page img {
+	height: 20px;
+}
+
+.dsi label {
+	border-width: 1px;
+	font-size: 8.25pt;
+	width: 81px;
 }

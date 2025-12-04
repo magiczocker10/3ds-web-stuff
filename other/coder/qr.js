@@ -1,4 +1,7 @@
 window.addEventListener('load', function() {
+	if ( isDSi() ) {
+		document.getElementById( 'root' ).className = 'dsi';
+	}
 	const code = document.getElementById('code'),
 		input = document.getElementById('text'),
 		codeSelectors = document.getElementsByName('codeSelectRadio'),
