@@ -1,4 +1,7 @@
 window.addEventListener("load", function() {
+	if ( isDSi() ) {
+		document.getElementById( 'root' ).className = 'dsi';
+	}
     const timeDisplay = document.getElementById("time-display"),
         appControls = document.getElementById("app-controls"),
         tabTimer = document.getElementById("tab-timer"),
@@ -136,7 +139,7 @@ window.addEventListener("load", function() {
 		stopwatchButtons.innerHTML = "";
 		stopwatchResetButton = stopwatchButtons.appendNew(["button", "Reset"]);
 		stopwatchResetButton.addEventListener("click", resetStopwatch, false);
-		stopwatchResumeButton = stopwatchButtons.appendNew(["button", {"style": "font-size: 21px; letter-spacing: 0px;"}, "Resume"]);
+		stopwatchResumeButton = stopwatchButtons.appendNew(["button", {"style": "letter-spacing: 0px;"}, "Resume"]);
 		stopwatchResumeButton.addEventListener("click", resumeStopwatch, false);
 	}
 
