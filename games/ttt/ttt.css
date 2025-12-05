@@ -5,19 +5,8 @@
 	text-align: center;
 }
 
-#field-wrap {
-	display: inline-block;
-	height: 200px;
+#field {
 	margin-top: 5px;
-	position: relative;
-	width: 200px;
-}
-
-#field,
-#back {
-	left: 0;
-	position: absolute;
-	top: 0;
 }
 
 #turn-txt {
@@ -34,4 +23,13 @@
 
 .playerO {
 	color: #0026ff;
+}
+
+.dsi #stats {
+	font-size: 9.75pt;
+}
+
+.dsi #top-screen h2,
+.dsi #turn-txt {
+	font-size: 11.25pt;
 }
