@@ -81,7 +81,7 @@ window.addEventListener('load', function() {
 	function genBars() {
 		newBar = '';
 		for (var ln=0; ln<barCount; ln++) {
-			newBar += ln + " ) |" + barTxt.substring(0, ran(barLength)) + '\n';
+			newBar += ln + " ) l" + barTxt.substring(0, ran(barLength)) + '\n';
 		}
 		bars.value = newBar;
 	}
@@ -99,7 +99,7 @@ window.addEventListener('load', function() {
 	}
 
 	for (var j=0; j<barLength; j++) {
-		barTxt += '|';
+		barTxt += 'l';
 	}
 
 	echo();
