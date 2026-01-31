@@ -26,9 +26,8 @@ window.addEventListener('load', function() {
 		],
 		w = Math.floor( canvas.width * 0.5 ),
 		h = Math.floor( canvas.height * 0.5 );
-	var lastend = 0,
-		buttons = 4,
-		degree = 360 / buttons,
+	var buttons = 4,
+		degree = 2 * Math.PI / buttons,
 		sequence = [],
 		paused = true,
 		index = 0,
@@ -36,17 +35,17 @@ window.addEventListener('load', function() {
 
 	function draw(highlight) {
 		ctx.strokeStyle ='white';
+		var lastend = 0;
 		for (var i = 0; i < buttons; i++) {
 			ctx.fillStyle = i === highlight ? colors[i][1] : colors[i][0];
 			ctx.lineWidth = 2;
 			ctx.beginPath();
-			ctx.moveTo(w,h);
-			var len = (degree/360) * 2 * Math.PI;
-			ctx.arc(w , h, h-5, lastend, lastend + len, false);
-			ctx.lineTo(w,h);
+			ctx.moveTo(w, h);
+			ctx.arc(w , h, h-5, lastend, lastend + degree, false);
+			ctx.closePath();
 			ctx.fill();
 			ctx.stroke();
-			lastend += Math.PI*2*(degree/360);
+			lastend += degree;
 		}
 		ctx.fillStyle = '#262626';
 		ctx.beginPath();
@@ -84,10 +83,9 @@ window.addEventListener('load', function() {
 	function reset() {
 		paused = true;
 		settings.style.display = '';
-		lastend = 0;
 		buttons = settingB.value;
 		strict = settingS.checked;
-		degree = 360 / buttons;
+		degree = 2 * Math.PI / buttons;
 		sequence = [];
 		index = 0;
 		start.disabled = false;
