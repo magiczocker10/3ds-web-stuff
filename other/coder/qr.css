@@ -24,6 +24,12 @@
 	width: 10px;
 }
 
+#left.hidden,
+#right.hidden {
+	color: #fff;
+	cursor: default;
+}
+
 .page {
 	display: inline-block;
 	width: 280px;

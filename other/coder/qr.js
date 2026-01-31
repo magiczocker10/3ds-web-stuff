@@ -24,21 +24,21 @@ window.addEventListener('load', function() {
 	function nextPage() {
 		if (page + 1 >= pages.length) return;
 
-		left.style.removeProperty('color');
+		left.className = '';
 		pages[page].style.display = 'none';
 		page++;
 		pages[page].style.removeProperty('display');
-		if (page + 1 === pages.length) right.style.color = 'transparent';
+		if (page + 1 === pages.length) right.className = 'hidden';
 	}
 
 	function prevPage() {
 		if (page <= 0) return;
 
-		right.style.removeProperty('color');
+		right.className = '';
 		pages[page].style.display = 'none';
 		page--;
 		pages[page].style.removeProperty('display');
-		if (page === 0) left.style.color = 'transparent';
+		if (page === 0) left.className = 'hidden';
 	}
 
 	document.getElementById('btn-gen').addEventListener('click', function() {
