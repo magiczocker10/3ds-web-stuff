@@ -35,12 +35,14 @@ window.addEventListener('load', function() {
 		numbers = document.getElementById('numbers'),
 		bars = document.getElementById('bars'),
 		canv = document.getElementById('tiles'),
+		scan = document.getElementById('scan'),
 		ctx = canv.getContext('2d', { alpha: false }),
 		termLength = terminalTexts.length,
 		barLength = 30,
 		cols = ds ? 2 : 6,
 		rows = ds ? 14 : 30,
-		tileCount = ds ? 10 : 16,
+		tileRows = ds ? 15 : 16,
+		tileCols = ds ? 10 : 16,
 		barCount = ds ? 6 : 9,
 		echoCount = ds ? 6 : 16;
 	var terminalLength = 0,
@@ -49,7 +51,15 @@ window.addEventListener('load', function() {
 		newBar = '',
 		oldTiles = [];
 
-	canv.width = 13 * tileCount - 2;
+	if ( ds ) {
+		scan.src = 'img/Radar DSi.gif';
+	} else {
+		scan.src = 'img/Radar 3DS.gif';
+	}
+
+	canv.height = 5 * tileRows - 2;
+	canv.width = 13 * tileCols - 2;
+
 	function ran(num) {
 		return Math.floor(Math.random() * num);
 	}
@@ -65,8 +75,8 @@ window.addEventListener('load', function() {
 	}
 
 	function genTiles() {
-		for (var y=0; y<16; y++) {
-			for (var x=0; x<tileCount; x++) {
+		for (var y=0; y<tileRows; y++) {
+			for (var x=0; x<tileCols; x++) {
 				const r = Math.random() < 0.5,
 					i = y*16+x;
 				if (oldTiles[i] !== r) {

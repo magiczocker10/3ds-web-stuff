@@ -46,12 +46,9 @@ textarea {
 }
 
 #radar {
-	background-color: #002a00;
-	border: 1px solid #008000;
-	border-radius: 43px;
 	display: inline-block;
-	height: 85px;
-	width: 85px;
+	height: 87px;
+	width: 87px;
 }
 
 #terminal {
@@ -73,34 +70,6 @@ textarea {
 	vertical-align: top;
 }
 
-@-webkit-keyframes scanRot {
-	from {
-		-webkit-transform: rotate(0deg);
-	}
-	to {
-		-webkit-transform: rotate(360deg);
-	}
-}
-
-@keyframes scanRot {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-#scan {
-	-webkit-animation: scanRot 1s infinite linear;
-	        animation: scanRot 1s infinite linear;
-	display: block;
-	height: 85px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 43px;
-}
-
 .dsi #top-screen {
 	padding: 0;
 }
@@ -120,6 +89,6 @@ textarea {
 }
 
 .dsi #radar {
-	height: 80px;
-	width: 80px;
+	height: 82px;
+	width: 82px;
 }
